@@ -1,0 +1,169 @@
+* {
+   margin: 0%;
+}
+
+.board {
+  /* padding: ; */
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.squares {
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50px;
+background: #244165;
+box-shadow: inset 6px 6px 12px #1f3958,
+            inset -6px -6px 12px #294972;
+}
+
+.X {
+  color: red;
+}
+.O {
+  color: green;
+}
+
+.info-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  padding: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+.info-wrapper button {
+  color: rgb(73, 255, 203);
+  display: flex; 
+  flex-direction: column;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5rem;
+  margin: 0.5rem 1rem;
+  border-radius: 50px;
+background: #244165;
+box-shadow: inset 6px 6px 12px #1f3958,
+            inset -6px -6px 12px #294972;
+}
+
+
+.row {
+  margin:  auto;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
+   position: relative;
+
+}
+
+.App {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+  height: 100vh;
+  background: #244165;
+}
+
+.header {
+   width: 100%;
+   background-color: gray;
+   color: aquamarine;
+   height: 80px;
+   font-size: 40px;
+   font-weight: 300;
+   padding-top: 20px;
+   text-align: center;  
+background: #244165;
+box-shadow: inset 6px 6px 12px #1f3958,
+            inset -6px -6px 12px #294972;
+}
+
+
+.result {
+  padding: 30px;
+  color: rgb(98, 254, 166);
+  font-size: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center;  
+  border-radius: 15px;
+background: #244165;
+box-shadow: inset 6px 6px 12px #1f3958,
+           inset -6px -6px 12px #294972;
+}
+
+
+.container { 
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  
+  grid-template-columns: 1fr 2.7fr 1.3fr;
+  grid-template-rows: 10% 2fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "headerArea headerArea headerArea"
+    "winnerDeclare boardArea history"
+    "winnerDeclare newgameButton history";
+}
+
+.history { 
+  margin: 30px;
+  grid-area: history;
+ }
+
+.boardArea {
+  padding: 30px;
+  color: rgb(98, 254, 166);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center;  
+  border-radius: 15px;
+   justify-content: center;
+   align-items: center; 
+   grid-area: boardArea; 
+}
+
+.headerArea {
+  
+   grid-area: headerArea; }
+
+.newgameButton {
+  margin: 20px; 
+  grid-area: newgameButton; }
+
+.winnerDeclare {
+  margin: 40px;
+  grid-area: winnerDeclare; }
+
+  .history-btn {
+     padding: 3px;
+     margin: 3px;
+     
+     padding-left: 20px;
+     padding-right: 20px;
+     color: white;
+     border-radius: 50px;
+     background: #244165;
+  }
